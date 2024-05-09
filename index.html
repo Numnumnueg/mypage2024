@@ -22,8 +22,8 @@
         </style>
 </head>
 <body>
-
-    <div class="Quiz-container">
+    <div>
+        <div class="Quiz-container">
         
         <h1></h1>
         <p id="question">ข้อที่ 1. PIM ย่อมาจากอะไร ?</p>
@@ -32,10 +32,9 @@
         <button class="button" onclick="checkAnswer('c')">C) พิม</button>
         <button class="button" onclick="checkAnswer('d')">D) ภิม</button>
         <p id="result"></p>
+        </div>   
         
-        
-
-    <div class="Quiz-container">
+        <div class="Quiz-container">
         <h1></h1>
         <p id="question">ข้อที่ 2. หน่วยงาน CM ย่อมาจากอะไร ?</p>
         <button class="button" onclick="correctOption('a')">A) Construction Management</button>
@@ -44,10 +43,13 @@
         <button class="button" onclick="correctOption('d')">D) Common</button>
         <p id="Option"></p>
 
-    </div> 
+        </div> 
+        <p id = "result3" ></p>
+    </div>
 
-        <h4> Score : <span id="player-score"></span> 0 / 2</h4>
-        <h4> Question : <span id="question-number"></span> 0 / 2</h4>
+    
+
+    
             
     <script src="script.js"></script>
 </body>

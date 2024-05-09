@@ -1,0 +1,27 @@
+function checkAnswer (answer) {
+    const result = document.getElementById('result');
+    if (answer === 'a') {
+        result.textContent = "ถูกต้อง PIM ย่อมาจาก PIM" ;
+        result.style.color = "green" ;
+
+    } else {
+        result.textContent = "Incorrect ; Try again." ;
+        result.style.color = 'red' ;
+    }
+} 
+
+
+
+function correctOption (answer) {
+    const Option = document.getElementById('Option');
+    if (answer === 'a') {
+        Option.textContent = "ถูกต้อง CM ย่อมาจาก Construction Management" ;
+        Option.style.color = "green" ;
+
+    } else {
+        Option.textContent = "Incorrect ; Try again." ;
+        Option.style.color = 'red' ;
+    }
+}
+
+

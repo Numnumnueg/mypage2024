@@ -1,99 +1,54 @@
-<style>
-    body {
-      background-image: url('picture.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-    </style>
-
 <!DOCTYPE html>
-<div align="center">
 <html lang="en">
-<head style="background-color: #FFF4D2;">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pijitarhan Hangkasri</title>
-    <h1 style="color:Tomato;"> **Hello Everyone** </h1>
+    <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
     <link rel="stylesheet" href="styles.css">
-</div>
-</style>
-</head>
-
-<body>
-    <div align="center">
-    <img src="profile.jpg" alt style="width: 20%;" srcset="height: 15%" >
-    <h2> Pijitar Hangkasri </h2>
-    <h4> ชื่อเล่น น้ำหนึ่ง </h4> <p>
-    <h4> สาขาการจัดการบริหารธุระกิจค้าปลีก </h4> <p>
-    <h4> มหาวิทยาลัยราชภัฏสกลนคร </h4>
-    
-    <a href = "https://www.wearecp.com/caf-m-24122020/"> ไปยังเว็บไซต์ของหน่วยงาน </a>
-    <br>
-    <a href = "contact.html"> contact at </a>
 
     <style>
-        a:link, a:visited {
-          background-color: #f1f1f1;
-          color: #e21d1d;
-          font-style: italic;
-          padding: 2px 3px;
+        .button {
+          background-color: #8c9e97; /* Green */
+          border: none;
+          color: white;
+          padding: 10px 25px;
           text-align: center;
           text-decoration: none;
-          display: block;
-        }
-        
-        a:hover, a:active {
-          background-color: #e9eef1;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
         }
         </style>
-    </div>
+</head>
+<body>
+
+    <div class="Quiz-container">
+        
+        <h1></h1>
+        <p id="question">ข้อที่ 1. PIM ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+        <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+        <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+        <button class="button" onclick="checkAnswer('d')">D) ภิม</button>
+        <p id="result"></p>
+        
+        
+
+    <div class="Quiz-container">
+        <h1></h1>
+        <p id="question">ข้อที่ 2. หน่วยงาน CM ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="correctOption('a')">A) Construction Management</button>
+        <button class="button" onclick="correctOption('b')">B) Carmine</button>
+        <button class="button" onclick="correctOption('c')">C) Coming</button>
+        <button class="button" onclick="correctOption('d')">D) Common</button>
+        <p id="Option"></p>
+
+    </div> 
+
+        <h4> Score : <span id="player-score"></span> 0 / 2</h4>
+        <h4> Question : <span id="question-number"></span> 0 / 2</h4>
+            
+    <script src="script.js"></script>
 </body>
-
-<div align="center">
-<h4> สถานที่ทำงาน - สายงานปัจจุบัน </h4>
-<!--ul>
-    <li> 1 CP ALL Company </li>
-    <li> 2 สายงาน CAF-M </li>
-    <li> 3 สำนัก Construction Management </li>
-    <li> 4 เจ้าหน้าที่ Construction Management BW </li>
- </ul>-->
-
- <!--ทำให้ List นำเสนอออกมาเป็น tabel-->
-
- <table style="background-color: #9BC2B2; width: 40%; height: 40%;"> 
- <thead>
-    <tr>
-        <th>
-            No.
-        </th>
-        <th>
-            รายละเอียด
-        </th>
-    </tr>
-    </style>
- </thead>
-
- <tr style="background-color: #92C7CF;">
-    <td> 1 </td>
-    <td> CP ALL Company </td>
-    </style>
- </tr>
- <tr style="background-color: #C5D6BA;">
-    <td> 2 </td>
-    <td> สายงาน CAF-M </td>
-    </style>
- </tr>
- <tr style="background-color: #F2E9D3;">
-    <td> 3 </td>
-    <td> สำนัก Construction Management </td>
-    </style>
- </tr>
- <tr style="background-color: #F6C8B6;">
-    <td> 4 </td>
-    <td> ตำแหน่ง - เจ้าหน้าที่ Construction Management BW </td>
-    </style>
- </div>
- </tr>
-</table>
 </html>
